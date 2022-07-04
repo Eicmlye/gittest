@@ -191,7 +191,7 @@ Git 中, `HEAD` 为当前版本指针, 向前1个版本为 `HEAD^`, 向前 n 个
 
     $ git remote add origin git@github.com:GITHUB_USER_NAME/REPO_NAME.git
 
-可将本地库与远程库关联 (分别使用 `https` 协议和 `ssh` 协议传输). 执行
+可将本地库与远程库关联 (分别使用 `https` 协议和 `ssh` 协议传输), 其中 `origin` 是远程库的别名. 执行
 
     $ git push -u origin main
 
