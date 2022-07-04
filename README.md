@@ -1,6 +1,6 @@
 # Git Usages
 
-[[toc]]
+[toc]
 
 ---
 
