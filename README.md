@@ -144,3 +144,13 @@ Git 中, `HEAD` 为当前版本指针, 向前1个版本为 `HEAD^`, 向前 n 个
     其中 `MD5_ID` 可在 `git reflog` 的执行结果中查找.
 
 ## 6. 关联 GitHub 远程库
+
+将 [1.2.](###1.2._设置远程仓库_ssh_key) 中的公钥 `id_rsa.pub` 内容复制到 GitHub 账号 SSH Key, 并将 `USER_EMAIL` 设置为 GitHub 账号的可见邮箱. 在 GitHub 账号中创建同名版本库 `REPO_NAME`, 不要加入任何默认文件（包括开源协议、`.gitignore` 文件和 `README` 文件等）. 执行
+
+    $ git remote add origin https://github.com/Eicmlye/test.git
+
+将本地库与远程库关联. 执行
+
+    $ git push -u origin main
+
+将本地分支 `main` 同步到远程库. 参数 `-u` 将本地分支 `main` 与远程库分支 `main` 关联, 此后再次提交该分支无需此参数. 
