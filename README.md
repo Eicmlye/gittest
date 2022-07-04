@@ -1,7 +1,5 @@
 # Git 使用指南
 
----
-
 1. [安装初始化](#1-安装初始化)
     - [1.1. 设置用户名和邮箱](#11-设置用户名和邮箱)
     - [1.2. 设置远程仓库 SSH Key](#12-设置远程仓库-ssh-key)
@@ -18,6 +16,8 @@
     - [5.5. Git操作历史记录](#55-Git操作历史记录)
     - [5.6. 版本回退](#56-版本回退)
 6. [关联 GitHub 远程库](#6-关联-github-远程库)
+
+---
 
 ## 1. 安装初始化
 
@@ -160,7 +160,7 @@ Git 中, `HEAD` 为当前版本指针, 向前1个版本为 `HEAD^`, 向前 n 个
 
 ## 6. 关联 GitHub 远程库
 
-将 1.2.小节 中的公钥 `id_rsa.pub` 内容复制到 GitHub 账号 SSH Key, 并将 `USER_EMAIL` 设置为 GitHub 账号的可见邮箱. 在 GitHub 账号中创建同名版本库 `REPO_NAME`, 不要加入任何默认文件（包括开源协议、`.gitignore` 文件和 `README` 文件等）. 执行
+将 [1.2.](#12-设置远程仓库-ssh-key) 中的公钥 `id_rsa.pub` 内容复制到 GitHub 账号 SSH Key, 并将 `USER_EMAIL` 设置为 GitHub 账号的可见邮箱. 在 GitHub 账号中创建同名版本库 `REPO_NAME`, 不要加入任何默认文件（包括开源协议、`.gitignore` 文件和 `README` 文件等）. 执行
 ```
 $ git remote add origin https://github.com/GITHUB_USER_NAME/REPO_NAME.git
 ```
